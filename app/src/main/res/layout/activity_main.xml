@@ -4,117 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bgnew"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/fotuneTellerID"
-        android:layout_width="452dp"
-        android:layout_height="185dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068"
-        app:srcCompat="@drawable/fortuneteller" />
 
     <Button
         android:id="@+id/loveButtonID"
-        android:layout_width="89dp"
-        android:layout_height="43dp"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
         android:background="@drawable/pinkbutton"
         android:text="@string/love_button"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/generalButton"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <Button
         android:id="@+id/generalButton"
-        android:layout_width="102dp"
-        android:layout_height="45dp"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
         android:background="@drawable/purplebutton"
         android:text="@string/general_button"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/makeYourWishID"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/makeYourWishID"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <Button
         android:id="@+id/moneyButtonID"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="84dp"
-        android:layout_height="40dp"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
         android:background="@drawable/bluebutton"
+        android:typeface="serif"
         android:text="@string/money_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toEndOf="@+id/generalButton"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <TextView
-        android:id="@+id/TextView"
-        android:layout_width="166dp"
-        android:layout_height="114dp"
+        android:id="@+id/fortuneTextView"
+        android:layout_width="161dp"
+        android:layout_height="128dp"
+        android:textColor="#D77BF0"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generalButton"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.388" />
 
     <ImageView
         android:id="@+id/makeYourWishID"
-        android:layout_width="312dp"
-        android:layout_height="87dp"
+        android:layout_width="286dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/generalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/txt" />
+
+    <ImageView
+        android:id="@+id/fortuneBorderID"
+        android:layout_width="416dp"
+        android:layout_height="284dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/generalButton"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/generalButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/blueborder" />
+
+    <ImageView
+        android:id="@+id/fortuneGraphID"
+        android:layout_width="379dp"
+        android:layout_height="244dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/makeYourWishID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotuneTellerID"
-        app:layout_constraintVertical_bias="0.044"
-        app:srcCompat="@drawable/txt" />
-
-    <ImageView
-        android:id="@+id/fortuneBorderID"
-        android:layout_width="215dp"
-        android:layout_height="218dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/generalButton"
-        app:layout_constraintStart_toStartOf="@+id/generalButton"
-        app:layout_constraintTop_toBottomOf="@+id/generalButton"
-        app:layout_constraintVertical_bias="0.436"
-        app:srcCompat="@drawable/blueborder" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="405dp"
-        android:layout_height="389dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/whiteborder" />
+        app:layout_constraintVertical_bias="0.39"
+        app:srcCompat="@drawable/pngwave" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
