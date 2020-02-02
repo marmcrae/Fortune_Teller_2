@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button moneyButton;
     private ImageView fortuneBorder;
 
+
     public String[] loveArray;
     public String[] generalArray;
     public String[] moneyArray;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         generalButton = (Button) findViewById(R.id.generalButton);
         moneyButton = (Button) findViewById(R.id.moneyButtonID);
         fortuneBorder = (ImageView) findViewById(R.id.fortuneBorderID);
+
 
         loveArray = new String[]{
                 "You have or will soon find the ONE!",
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
                         fortuneBorder.setVisibility(View.VISIBLE);
 
 
+
             }
         });
 
@@ -106,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 fortuneBorder.setVisibility(View.VISIBLE);
 
 
+
             }
         });
 
@@ -117,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
                 int num = random.nextInt(moneyArray.length);
                 fortuneTextView.setText(moneyArray[num]);
                 fortuneBorder.setVisibility(View.VISIBLE);
+
 
 
             }
